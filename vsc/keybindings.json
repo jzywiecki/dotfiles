@@ -10,10 +10,6 @@
         "when":  "editorTextFocus && !editorTabMovesFocus"
     },
     {
-        "key": "cmd+o",
-        "command": "projectManager.listGitProjects#sideBarGit"
-    },
-    {
       "command": "workbench.action.toggleSidebarVisibility",
       "key": "cmd+e"
     },
