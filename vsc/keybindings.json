@@ -1,0 +1,59 @@
+// Umieść swoje powiązania klawiszy w tym pliku, aby zastąpić ustawienia domyślne
+[
+    {
+        "key": "tab",
+        "command": "tab",
+        "when":  "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when":  "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+        "key": "cmd+o",
+        "command": "projectManager.listGitProjects#sideBarGit"
+    },
+    {
+      "command": "workbench.action.toggleSidebarVisibility",
+      "key": "cmd+e"
+    },
+    {
+      "command": "workbench.files.action.focusFilesExplorer",
+      "key": "cmd+e",
+      "when": "!filesExplorerFocus"
+    },
+    {
+      "command": "explorer.newFile",
+      "key": "n",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "renameFile",
+      "key": "r",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.copy",
+      "key": "c",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.paste",
+      "key": "p",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "deleteFile",
+      "key": "d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "-workbench.action.files.save",
+      "key": "cmd+s"
+    },
+    {
+      "command": "saveAll",
+      "key": "cmd+s"
+    }
+]

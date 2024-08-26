@@ -1,0 +1,97 @@
+{
+    // vim keybindings
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true, 
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(194,157,241, 0.5)", 
+    "vim.highlightedyank.textColor": "white",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": [":w!"]
+        },
+        {
+            "before": ["<leader>", "x"],
+            "commands": [":x!"]
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": [":q!"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+    {
+        "before": [ "j", "k"],
+        "after": ["<Esc>"]
+    }
+    ],
+
+    // editor
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.inlineSuggest.enabled": true,
+
+    // workbench
+    "workbench.sideBar.location": "right",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.activityBar.location": "bottom",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+
+    // window
+    "window.zoomLevel": 2,
+    "window.titleBarStyle": "custom",
+    "window.customTitleBarVisibility": "windowed",
+    "window.commandCenter": false,
+
+    // terminal 
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.minimumContrastRatio": 1,
+
+    // go
+    "gopls": {
+      "ui.semanticTokens": true
+    },
+    "go.toolsManagement.autoUpdate": true,
+
+    // git
+    "git.openRepositoryInParentFolders": "never",
+
+    // explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // github copilot
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    // comments
+    "comments.visible": false
+}
+
